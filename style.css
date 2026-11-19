@@ -1,1 +1,144 @@
+/* Reset básico y tipografía general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #2d3748;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Encabezado y Menú de Navegación */
+header {
+    background-color: #1a365d;
+    color: #ffffff;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 6px;
+    background-color: #2b6cb0;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #dd6b20; /* Toque naranja estilo básquet */
+}
+
+nav a.activo {
+    background-color: #dd6b20;
+}
+
+/* Contenedor Principal */
+main {
+    max-width: 850px;
+    width: 90%;
+    margin: 30px auto;
+    flex: 1;
+}
+
+.tarjeta {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid #2b6cb0;
+}
+
+.tarjeta h2 {
+    color: #1a365d;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.tarjeta h3 {
+    color: #2b6cb0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+/* Imágenes */
+.tarjeta img {
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Lista en la página de la institución */
+.lista-destacada {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.lista-destacada li {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+/* Botones de acceso rápido en el Inicio */
+.botones-inicio {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #1a365d;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #dd6b20;
+}
+
+/* Pie de página */
+footer {
+    background-color: #1a365d;
+    color: #e2e8f0;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
